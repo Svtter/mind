@@ -1,9 +1,9 @@
 package query
 
 import (
-	"github.com/ribice/gorsk-gin/internal"
+	"github.com/svtter/mind/internal"
 
-	"github.com/ribice/gorsk-gin/internal/errors"
+	"github.com/svtter/mind/internal/errors"
 )
 
 // List prepares data for list queries

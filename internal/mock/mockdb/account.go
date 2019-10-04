@@ -3,7 +3,7 @@ package mockdb
 import (
 	"context"
 
-	"github.com/ribice/gorsk-gin/internal"
+	"github.com/svtter/mind/internal"
 )
 
 // Account database mock

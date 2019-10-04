@@ -2,7 +2,7 @@ package rbac
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk-gin/internal"
+	"github.com/svtter/mind/internal"
 )
 
 // New creates new RBAC service

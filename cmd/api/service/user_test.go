@@ -8,17 +8,17 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ribice/gorsk-gin/internal/errors"
+	"github.com/svtter/mind/internal/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ribice/gorsk-gin/internal/user"
+	"github.com/svtter/mind/internal/user"
 
-	"github.com/ribice/gorsk-gin/internal"
+	"github.com/svtter/mind/internal"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk-gin/cmd/api/service"
-	"github.com/ribice/gorsk-gin/internal/mock"
-	"github.com/ribice/gorsk-gin/internal/mock/mockdb"
+	"github.com/svtter/mind/cmd/api/service"
+	"github.com/svtter/mind/internal/mock"
+	"github.com/svtter/mind/internal/mock/mockdb"
 )
 
 func TestListUsers(t *testing.T) {

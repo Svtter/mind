@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk-gin/cmd/api/mw"
+	"github.com/svtter/mind/cmd/api/mw"
 )
 
 func TestAdd(t *testing.T) {

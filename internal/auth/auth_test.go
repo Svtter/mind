@@ -5,14 +5,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/ribice/gorsk-gin/internal"
-	"github.com/ribice/gorsk-gin/internal/errors"
+	"github.com/svtter/mind/internal"
+	"github.com/svtter/mind/internal/errors"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/ribice/gorsk-gin/internal/mock/mockdb"
+	"github.com/svtter/mind/internal/mock/mockdb"
 
-	"github.com/ribice/gorsk-gin/internal/auth"
-	"github.com/ribice/gorsk-gin/internal/mock"
+	"github.com/svtter/mind/internal/auth"
+	"github.com/svtter/mind/internal/mock"
 )
 
 func TestAuthenticate(t *testing.T) {

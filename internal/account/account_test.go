@@ -4,16 +4,16 @@ import (
 	"context"
 	"testing"
 
-	"github.com/ribice/gorsk-gin/internal/mock"
+	"github.com/svtter/mind/internal/mock"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/gin-gonic/gin"
 
-	"github.com/ribice/gorsk-gin/internal/errors"
+	"github.com/svtter/mind/internal/errors"
 
-	"github.com/ribice/gorsk-gin/internal"
-	"github.com/ribice/gorsk-gin/internal/account"
-	"github.com/ribice/gorsk-gin/internal/mock/mockdb"
+	"github.com/svtter/mind/internal"
+	"github.com/svtter/mind/internal/account"
+	"github.com/svtter/mind/internal/mock/mockdb"
 )
 
 func TestCreate(t *testing.T) {

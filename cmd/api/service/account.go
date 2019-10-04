@@ -3,12 +3,12 @@ package service
 import (
 	"net/http"
 
-	"github.com/ribice/gorsk-gin/internal"
+	model "github.com/svtter/mind/internal"
 
-	"github.com/ribice/gorsk-gin/internal/account"
-	"github.com/ribice/gorsk-gin/internal/errors"
+	"github.com/svtter/mind/internal/account"
+	apperr "github.com/svtter/mind/internal/errors"
 
-	"github.com/ribice/gorsk-gin/cmd/api/request"
+	"github.com/svtter/mind/cmd/api/request"
 
 	"github.com/gin-gonic/gin"
 )

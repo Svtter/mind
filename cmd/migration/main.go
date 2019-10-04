@@ -7,10 +7,10 @@ import (
 
 	"github.com/go-pg/pg/orm"
 
-	"github.com/ribice/gorsk-gin/internal"
+	model "github.com/svtter/mind/internal"
 
 	"github.com/go-pg/pg"
-	"github.com/ribice/gorsk-gin/internal/auth"
+	"github.com/svtter/mind/internal/auth"
 )
 
 func main() {
@@ -21,7 +21,7 @@ func main() {
 	INSERT INTO public.roles VALUES (3, 3, 'COMPANY_ADMIN');
 	INSERT INTO public.roles VALUES (4, 4, 'LOCATION_ADMIN');
 	INSERT INTO public.roles VALUES (5, 5, 'USER');`
-	var psn = ``
+	var psn = `postgresql://@localhost:5432/xiuhao`
 	queries := strings.Split(dbInsert, ";")
 
 	u, err := pg.ParseURL(psn)

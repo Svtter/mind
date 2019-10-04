@@ -5,11 +5,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ribice/gorsk-gin/internal"
-	"github.com/ribice/gorsk-gin/internal/platform/postgres"
+	"github.com/svtter/mind/internal"
+	"github.com/svtter/mind/internal/platform/postgres"
 	"go.uber.org/zap"
 
-	"github.com/ribice/gorsk-gin/cmd/api/config"
+	"github.com/svtter/mind/cmd/api/config"
 
 	"github.com/fortytw2/dockertest"
 	"github.com/go-pg/pg"

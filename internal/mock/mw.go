@@ -1,7 +1,7 @@
 package mock
 
 import (
-	"github.com/ribice/gorsk-gin/internal"
+	"github.com/svtter/mind/internal"
 )
 
 // JWT mock

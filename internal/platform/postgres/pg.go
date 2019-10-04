@@ -7,9 +7,9 @@ import (
 	"github.com/go-pg/pg"
 	// DB adapter
 	_ "github.com/lib/pq"
-	"github.com/ribice/gorsk-gin/internal"
+	model "github.com/svtter/mind/internal"
 
-	"github.com/ribice/gorsk-gin/cmd/api/config"
+	"github.com/svtter/mind/cmd/api/config"
 )
 
 const notDeleted = "deleted_at is null"

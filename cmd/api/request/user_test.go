@@ -6,11 +6,11 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/ribice/gorsk-gin/internal/mock"
+	"github.com/svtter/mind/internal/mock"
 	"github.com/stretchr/testify/assert"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ribice/gorsk-gin/cmd/api/request"
+	"github.com/svtter/mind/cmd/api/request"
 )
 
 func TestUserUpdate(t *testing.T) {
