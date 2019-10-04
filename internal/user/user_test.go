@@ -5,10 +5,10 @@ import (
 	"testing"
 
 	"github.com/gin-gonic/gin"
-	"github.com/svtter/mind/internal/errors"
 	"github.com/stretchr/testify/assert"
+	apperr "github.com/svtter/mind/internal/errors"
 
-	"github.com/svtter/mind/internal"
+	model "github.com/svtter/mind/internal"
 	"github.com/svtter/mind/internal/mock"
 	"github.com/svtter/mind/internal/mock/mockdb"
 	"github.com/svtter/mind/internal/user"

@@ -3,8 +3,8 @@ package pgsql
 import (
 	"context"
 
-	"github.com/svtter/mind/internal"
-	"github.com/svtter/mind/internal/errors"
+	model "github.com/svtter/mind/internal"
+	apperr "github.com/svtter/mind/internal/errors"
 
 	"go.uber.org/zap"
 
