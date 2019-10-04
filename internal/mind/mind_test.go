@@ -8,10 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	model "github.com/svtter/mind/internal"
 	apperr "github.com/svtter/mind/internal/errors"
+	"github.com/svtter/mind/internal/mind"
 	"github.com/svtter/mind/internal/mock"
 	"github.com/svtter/mind/internal/mock/mockdb"
-
-	"github.com/svtter/mind/internal/mind"
 )
 
 func TestView(t *testing.T) {
