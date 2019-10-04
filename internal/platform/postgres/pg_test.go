@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/svtter/mind/internal"
-	"github.com/svtter/mind/internal/platform/postgres"
+	model "github.com/svtter/mind/internal"
+	pgsql "github.com/svtter/mind/internal/platform/postgres"
 	"go.uber.org/zap"
 
 	"github.com/svtter/mind/cmd/api/config"

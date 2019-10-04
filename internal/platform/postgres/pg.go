@@ -27,11 +27,7 @@ func New(cfg *config.Database) (*pg.DB, error) {
 		return nil, err
 	}
 	if cfg.Log {
-		db.OnQueryProcessed(func(event *pg.QueryProcessedEvent) {
-			query, err := event.FormattedQuery()
-			checkErr(err)
-			log.Printf("%s | %s", time.Since(event.StartTime), query)
-		})
+		db.AddQueryHook(dbLogger{})
 	}
 	if cfg.CreateSchema {
 		createSchema(db, &model.Company{}, &model.Location{}, &model.Role{}, &model.User{})
