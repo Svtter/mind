@@ -69,6 +69,10 @@ func TestNew(t *testing.T) {
 			name: "UserDB",
 			fn:   testUserDB,
 		},
+		{
+			name: "MindDB",
+			fn:   testMindDB,
+		},
 	}
 
 	seedData(t, db)
