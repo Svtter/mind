@@ -11,26 +11,27 @@ import (
 )
 
 func testMindDB(t *testing.T, c *pg.DB, l *zap.Logger) {
-	userDB := pgsql.NewUserDB(c, l)
+	mindDB := pgsql.NewMindDB(c, l)
 	cases := []struct {
 		name string
-		fn   func(*testing.T, *pgsql.UserDB, *pg.DB)
+		fn   func(*testing.T, *pgsql.MindDB, *pg.DB)
 	}{
 		{
 			name: "view",
 			fn:   testDBView,
 		},
 	}
+
 	for _, tt := range cases {
 		t.Run(tt.name, func(t *testing.T) {
-			tt.fn(t, userDB, c)
+			tt.fn(t, mindDB, c)
 		})
 	}
 
 }
 
 // testDBView
-func testDBView(t *testing.T, db *pgsql.UserDB, c *pg.DB) {
+func testDBView(t *testing.T, db *pgsql.MindDB, c *pg.DB) {
 	cases := []struct {
 		name     string
 		wantErr  bool
@@ -56,12 +57,12 @@ func testDBView(t *testing.T, db *pgsql.UserDB, c *pg.DB) {
 	}
 	for _, tt := range cases {
 		t.Run(tt.name, func(t *testing.T) {
-			user, err := db.View(nil, tt.id)
+			mind, err := db.View(nil, tt.id)
 			assert.Equal(t, tt.wantErr, err != nil)
 			if tt.wantData != nil {
-				tt.wantData.CreatedAt = user.CreatedAt
-				tt.wantData.UpdatedAt = user.UpdatedAt
-				assert.Equal(t, tt.wantData, user)
+				tt.wantData.CreatedAt = mind.CreatedAt
+				tt.wantData.UpdatedAt = mind.UpdatedAt
+				assert.Equal(t, tt.wantData, mind)
 			}
 		})
 	}

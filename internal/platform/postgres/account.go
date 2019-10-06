@@ -4,9 +4,9 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/svtter/mind/internal"
- 
-	"github.com/svtter/mind/internal/errors"
+	model "github.com/svtter/mind/internal"
+
+	apperr "github.com/svtter/mind/internal/errors"
 
 	"github.com/go-pg/pg"
 	"go.uber.org/zap"

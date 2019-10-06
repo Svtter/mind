@@ -20,3 +20,9 @@ func (d dbLogger) BeforeQuery(c context.Context, event *pg.QueryEvent) (context.
 func (d dbLogger) AfterQuery(c context.Context, event *pg.QueryEvent) error {
 	return nil
 }
+
+func checkErr(err error) {
+	if err != nil {
+		log.Fatal(err)
+	}
+}

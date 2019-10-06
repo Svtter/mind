@@ -1,7 +1,6 @@
 package pgsql
 
 import (
-	"log"
 	"time"
 
 	"github.com/go-pg/pg"
@@ -30,7 +29,7 @@ func New(cfg *config.Database) (*pg.DB, error) {
 		db.AddQueryHook(dbLogger{})
 	}
 	if cfg.CreateSchema {
-		createSchema(db, &model.Company{}, &model.Location{}, &model.Role{}, &model.User{})
+		createSchema(db, &model.Company{}, &model.Location{}, &model.Role{}, &model.User{}, &model.Mind{})
 	}
 	return db, nil
 }
@@ -38,11 +37,5 @@ func New(cfg *config.Database) (*pg.DB, error) {
 func createSchema(db *pg.DB, models ...interface{}) {
 	for _, model := range models {
 		checkErr(db.CreateTable(model, nil))
-	}
-}
-
-func checkErr(err error) {
-	if err != nil {
-		log.Fatal(err)
 	}
 }
